@@ -6,4 +6,4 @@
 #$ -j y
 #$ -l h_rt=160000
 #$ -pe mp 2 -l mem_free=48G
-python3 JobScript_for_Data.py $SGE_TASK_ID
+python3 JobScript_for_Comparision.py $SGE_TASK_ID
