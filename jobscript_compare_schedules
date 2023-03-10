@@ -7,4 +7,4 @@
 #$ -l h_rt=160000
 #S -l cpuflag_avx
 #$ -pe mp 2 -l mem_free=48G
-python3 JobScript_for_Comparision.py $SGE_TASK_ID
+python3.6 JobScript_for_Comparision.py $SGE_TASK_ID
