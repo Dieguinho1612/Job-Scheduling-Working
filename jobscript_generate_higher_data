@@ -4,6 +4,6 @@
 #$ -o ./outputs/output$TASK_ID.txt
 #$ -j y
 #$ -l h_rt=160000
-#$ -l cuflag_avx
+#$ -l cpuflag_avx
 #$ -pe mp 2 -l mem_free=48G
 python3.6 JobScript_for_higher_data_generation.py $SGE_TASK_ID
