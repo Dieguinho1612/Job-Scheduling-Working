@@ -522,7 +522,7 @@ input = sys.argv[1]
 
 def save_dictionary(data_dictionary):
     #with open(f'D:\\Job-Scheduling-Files\Data\EstimData\estim_data_{input}.pickle', 'wb') as f:
-    with open(f'EstimData/estim_data_{input}.pickle', 'wb') as f:
+    with open(f'EstimData/estim_data_{n}_Jobs_{input}.pickle', 'wb') as f:
         pickle.dump(data_dictionary, f, pickle.HIGHEST_PROTOCOL)
 
 
