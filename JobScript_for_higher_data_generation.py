@@ -109,7 +109,7 @@ def create_policy(NN,state):
         if sum(state.jobs_remaining) > 8:
             action, job = act(NN, state)
         else:
-            action, job = act(Supervised_Target_Network, state)
+            action, job = act(Supervised_Target_NN, state)
         machine = list_machines[state.machine]
         
         if job:
@@ -230,7 +230,7 @@ def induce_and_compute_policy(NN,state):
         if n_state > 8:
             action, job = act(NN, state)
         else:
-            action, job = act(Supervised_Target_Network, state)
+            action, job = act(Supervised_Target_NN, state)
         machine = list_machines[state.machine]
         
         if job:
